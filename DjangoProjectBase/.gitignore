@@ -1,1 +1,3 @@
 *.pyc
+/openAI.env
+/DjangoProjectBase2/*

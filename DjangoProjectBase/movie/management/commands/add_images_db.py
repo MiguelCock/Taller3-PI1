@@ -36,7 +36,7 @@ class Command(BaseCommand):
                 quality="standard",
                 n=1,
             )
-            image_url = response['data'][0].url
+            image_url = response.data[0].url
             img = fetch_image(image_url)
             img.save(f'media/movie/images/{item.title}.jpg')           
             item.image = f'movie/images/{item.title}.jpg'   
